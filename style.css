@@ -37,16 +37,15 @@ p {
 
 #maincontent h2 { 
   font-size: 1.3em;
-  margin-left: 1em;
 }
 
 #maincontent h3 { 
   font-size: 1.1em;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 #maincontent p.subparagraph { 
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 #nav, #contact_me { 

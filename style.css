@@ -1,8 +1,10 @@
+@import "fonts.css";
+
 body { 
   background-color: #FFFFFF;
   font-size: .8em;
   padding: 0px;
-  font-family: "Noto Sans", sans;
+  font-family: "OpenSans", sans;
 }
 
 a, a:visited, a:active { 

@@ -3,10 +3,15 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
+import michel
+
+handle404 = "error_404"
+handle500 = "error_500"
+
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'rouly_net.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^', include('michel.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+
 )

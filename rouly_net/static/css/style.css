@@ -68,7 +68,8 @@ p {
 }
 
 span.contacttype { 
-  width: 4.5em;
+  text-align: center;
+  width: 2.5em;
   display: inline-block;
 }
 

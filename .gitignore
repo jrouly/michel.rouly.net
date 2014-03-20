@@ -4,3 +4,4 @@
 .virtualenv
 *.pyc
 *.swp
+rouly_net/secret

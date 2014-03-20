@@ -5,8 +5,8 @@ admin.autodiscover()
 
 import michel
 
-handle404 = "error_404"
-handle500 = "error_500"
+handle404 = "michel.views.error"
+handle500 = "michel.views.error"
 
 urlpatterns = patterns('',
 

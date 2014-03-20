@@ -5,7 +5,7 @@ urlpatterns = patterns('michel.views',
     url(r'^$', 'home', name = 'home'),
     url(r'^work$', 'work', name = 'work'),
     url(r'^research$', 'research', name = 'research'),
-    url(r'^volunteer$', 'volunteer', name = 'volunteer'),
+    url(r'^community$', 'community', name = 'community'),
     url(r'^contact$', 'contact', name = 'contact'),
 
 )

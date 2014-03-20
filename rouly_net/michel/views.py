@@ -25,8 +25,8 @@ def research(request):
     },
     )
 
-def volunteer(request):
-    return render(request, 'volunteer.html', {
+def community(request):
+    return render(request, 'community.html', {
     },
     )
 

@@ -40,8 +40,10 @@ def contact(request):
     )
 
 def resume(request):
-    with open( os.path.join(settings.STATIC_ROOT, 'resume.pdf'), 'r' ) as pdf:
+    path = os.path.join(settings.STATIC_ROOT, 'resume.pdf')
+    with open( path, 'r' ) as pdf:
         response = HttpResponse( pdf.read(), mimetype='application/pdf')
-        response['Content-Disposition'] = 'inline;filename=resume.pdf'
+        response['Content-Disposition'] = 'inline;filename="resume.pdf"'
+        response['Content-Length'] = os.path.getsize( path )
         return response
     pdf.closed()

@@ -1,9 +1,38 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block pagetitle %}
 hello world &middot; {home}
 {% endblock %}
 
 {% block content %}
-Hello.
+
+<p>
+  My name is Jean Michel Rouly. I am an undergraduate at 
+  <a href="http://www.gmu.edu">George Mason University</a> 
+  in Computer Science, with research interests in 
+  Computational Linguistics and Software Engineering. I currently
+  serve as president of the George Mason
+  <a href="http://srct.gmu.edu">Student-Run Computing and Technology</a>
+  organization.
+</p>
+
+<p>
+  This summer 2013 I was engaged as an undergraduate researcher with the
+  <a href="http://www.fit.edu">Florida Institute of Technology</a> 
+  and the 
+  <a href="http://www.nsf.gov">National Science Foundation</a> 
+  conducting research into machine learning in theory and 
+  application with the 
+  <a href="http://www.amalthea-reu.org">Amalthea REU</a>
+  program.
+</p>
+
+<p>
+  Please view my <a href="{% url 'work' %}">work</a>,
+  <a href="{% url 'research' %}">research</a>, and
+  <a href="{% url 'volunteer' %}">volunteer</a> pages or my
+  <a href="{% static 'resume.pdf' %}">résumé</a> for more information.
+</p>
+
 {% endblock %}

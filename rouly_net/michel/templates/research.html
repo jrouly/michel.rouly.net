@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block pagetitle %}
+michel rouly &middot; {research}
+{% endblock %}
+
+{% block content %}
+
+<h2>Amalthea REU</h2>
+
+<p>
+  <strong>Project Title:</strong>&nbsp;Large-scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation
+</p>
+
+<p>
+  Summer 2013 I was engaged as an undergraduate researcher with the
+  <a href="http://www.fit.edu">Florida Institute of Technology</a> 
+  and the 
+  <a href="http://www.nsf.gov">National Science Foundation</a> 
+  conducting research into machine learning in theory and 
+  application with the 
+  <a href="http://www.amalthea-reu.org">Amalthea REU</a>
+  program.
+</p>
+
+<p>
+  The project involved architecting and implementing a Big Data scale 
+  data-mining framework with a 
+  <a href="http://www.dillonmrose.com">research partner</a> and
+  a graduate mentor. The application was built on existing 
+  free and open source software frameworks, namely 
+  <a href="http://hadoop.apache.org">Apache Hadoop</a> 
+  for MapReduce and distributed filesystem implementations, 
+  <a href="http://mahout.apache.org">Apache Mahout</a> 
+  libraries for mathematical support and algorithm benchmarking, and
+  <a href="http://hive.apache.org">Apache Hive</a>
+  for data warehousing and post-processing data manipulation.
+</p>
+
+<p>
+  Specifically, we parallelized the exemplar-based clustering algorithm 
+  <a href="http://uai.sis.pitt.edu/papers/11/p238-givoni.pdf">Hierarchical Affinity Propagation</a> 
+  using a MapReduce framework. Preliminary results of running the distributed 
+  algorithm on <a href="http://www.amazon.com">Amazon.com</a>'s 
+  <a href="http://aws.amazon.com/elasticmapreduce">Elastic MapReduce (EMR)</a>
+  service indicate superior performance as compared to competitive
+  algorithms from the Apache Mahout libraries.
+</p>
+
+<h3>Distributables</h3>
+
+<p class="subparagraph">
+  <strong>Conference Paper:</strong> 
+    <a href="/projects/hap-with-map/docs/paper.pdf">pdf (1M)</a>
+  <br />
+
+  <strong>Conference Slides:</strong> 
+    <a href="/projects/hap-with-map/docs/slides.pptx">pptx (27M)</a>
+</p>
+
+<p class="subparagraph">
+  <strong>Source Package:</strong> 
+    <a href="/projects/hap-with-map.tar.gz">tar.gz (4.5M)</a>
+  <br />
+  <strong>Git Repository:</strong>
+    <a href="https://github.com/jrouly/hap-with-map">GitHub</a>
+  <br />
+  <strong>API:</strong> 
+    <a href="/projects/hap-with-map/docs/javadoc/index.html">JavaDoc</a>
+</p>
+
+<p class="subparagraph">
+  <strong>Demo:</strong>
+    <a href="/projects/hap-with-map/demo/index.html">available</a>
+  <br />
+
+  <strong>Project Video:</strong> 
+    <a href="http://youtu.be/a-YP9O4gqIA">YouTube</a>
+  <br />
+
+  <strong>Project Poster:</strong> 
+    <a href="/projects/hap-with-map/docs/poster.pdf">pdf (3M)</a>
+  <br />
+
+  <strong>Technical Report:</strong>
+    <a href="/projects/hap-with-map/docs/technical-report.pdf">pdf (2M)</a>
+</p>
+
+{% endblock %}

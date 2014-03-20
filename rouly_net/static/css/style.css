@@ -1,0 +1,81 @@
+/* @import "fonts.css"; */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+body { 
+  background-color: #FFFFFF;
+  font-size: .8em;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a, a:visited, a:active { 
+  text-decoration: none;
+  color: #3F78A9;
+}
+
+a:hover { 
+  color: #A94D3F;
+}
+
+p { 
+  text-align: justify;
+}
+
+#maincontent { 
+  margin: auto;
+  width: 800px;
+}
+
+#maincontent hr { 
+  color: #000000;
+  background-color: #000000;
+  border: 1px solid #000000;
+  clear: both;
+}
+
+#maincontent h1 { 
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+#maincontent h2 { 
+  font-size: 1.3em;
+}
+
+#maincontent h3 { 
+  font-size: 1.1em;
+  margin-left: 1em;
+}
+
+#maincontent p.subparagraph { 
+  margin-left: 2em;
+}
+
+#nav, #contact_me { 
+  font-size: 85%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#nav { 
+  float: left;
+  margin-left: 10px;
+}
+
+#contact_me { 
+  float: right;
+  margin-right: 10px;
+}
+
+span.contacttype { 
+  width: 4.5em;
+  display: inline-block;
+}
+
+#timestamp { 
+  text-align: right;
+  font-size: 0.7em;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}

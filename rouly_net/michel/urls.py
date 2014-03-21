@@ -8,6 +8,4 @@ urlpatterns = patterns('michel.views',
     url(r'^community$', 'community', name = 'community'),
     url(r'^contact$', 'contact', name = 'contact'),
 
-    url(r'^resume.pdf$', 'resume', name = 'resume'),
-
 )

@@ -33,12 +33,3 @@ def contact(request):
     return render(request, 'contact.html', {
     },
     )
-
-def resume(request):
-    path = os.path.join(settings.STATIC_ROOT, 'resume.pdf')
-    with open( path, 'r' ) as pdf:
-        response = HttpResponse( pdf.read(), mimetype='application/pdf')
-        response['Content-Disposition'] = 'inline;filename="resume.pdf"'
-        response['Content-Length'] = os.path.getsize( path )
-        return response
-    pdf.closed()

@@ -19,6 +19,11 @@ def work(request):
     },
     )
 
+def projects(request):
+    return render(request, 'projects.html', {
+    },
+    )
+
 def research(request):
     return render(request, 'research.html', {
     },

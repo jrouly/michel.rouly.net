@@ -23,7 +23,7 @@ p {
 
 #maincontent { 
   margin: auto;
-  width: 800px;
+  max-width: 800px;
 }
 
 #maincontent hr { 

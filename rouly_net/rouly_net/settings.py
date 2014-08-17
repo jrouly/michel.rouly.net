@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'michel',
+    'piwik',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -104,3 +105,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.contrib.auth.context_processors.auth',
 )
+
+# Piwik configurations.
+# https://pypi.python.org/pypi/django-piwik/
+
+PIWIK_SITE_ID = 1
+PIWIK_URL = 'https://michel.rouly.net/analytics/'

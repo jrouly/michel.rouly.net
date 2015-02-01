@@ -110,4 +110,4 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 # https://pypi.python.org/pypi/django-piwik/
 
 PIWIK_SITE_ID = 1
-PIWIK_URL = 'https://michel.rouly.net/analytics/'
+PIWIK_URL = 'http://michel.rouly.net/analytics/'

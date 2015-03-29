@@ -1,7 +1,2 @@
-/projects
-/priv
-
-.virtualenv
+env
 *.pyc
-*.swp
-rouly_net/secret

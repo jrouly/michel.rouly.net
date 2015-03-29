@@ -1,2 +1,5 @@
 env
+.runonce
 *.pyc
+*.log
+*.pid

@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-      {% load staticfiles %}
       <meta charset="UTF-8">
+      <meta name="keywords" content="Jean Michel Rouly, computer science, research, software, George Mason University">
+      <meta name="description" content="Jean Michel Rouly's personal website.">
+      <meta name="author" content="Jean Michel Rouly">
+      <meta name="robots" content="all">
+
       <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-      <link rel="stylesheet" href="{% static "css/style.css" %}" />
-      <link rel="shortcut icon" href="{% static "img/favicon.png" %}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+      <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" />
       <title>Michel Rouly</title>
     </head>
     <body>
@@ -14,16 +18,16 @@
         <h1>{% block pagetitle %}{% endblock %}</h1>
 
         <span id="nav">
-          <a href="{% url 'home' %}">home</a> - 
-          <a href="{% url 'work' %}">work</a> - 
-          <a href="{% url 'projects' %}">projects</a> -
-          <a href="{% url 'research' %}">research</a> - 
-          <a href="{% url 'community' %}">community</a> - 
-          <a href="/resume.pdf">résumé</a>
+          <a href="{{ url_for('views.homepage') }}">home</a> - 
+          <a href="{{ url_for('views.work') }}">work</a> - 
+          <a href="{{ url_for('views.projects') }}">projects</a> -
+          <a href="{{ url_for('views.research') }}">research</a> - 
+          <a href="{{ url_for('views.community') }}">community</a> - 
+          <a href="{{ url_for('static', filename='resume.pdf') }}">résumé</a>
         </span>
 
         <span id="contact_me">
-          <a href="{% url 'contact' %}">contact</a>
+          <a href="{{ url_for('views.contact') }}">contact</a>
         </span>
 
         <hr />
@@ -33,6 +37,7 @@
         {% endblock %}
 
       </div>
-      <div id="timestamp">2014-03-20 <a href="http://www.apache.org/licenses/LICENSE-2.0">&copy; Jean Michel Rouly</a></div>
+      <div id="timestamp">2015-02-02 <a href="http://www.apache.org/licenses/LICENSE-2.0">&copy; Jean Michel Rouly</a></div>
+
     </body>
 </html>

@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 
 {% block pagetitle %}
 michel rouly &middot; {home}
@@ -11,29 +10,29 @@ michel rouly &middot; {home}
   My name is Jean Michel Rouly. I am an undergraduate at 
   <a href="http://www.gmu.edu">George Mason University</a> 
   in Computer Science, with research interests in 
-  Computational Linguistics and Data Mining. I currently
+  Machine Learning and Data Mining. I currently
   serve as president of the George Mason
   <a href="http://srct.gmu.edu">Student-Run Computing and Technology</a>
   organization.
 </p>
 
 <p>
-  This summer 2013 I was engaged as an undergraduate researcher with the
-  <a href="http://www.fit.edu">Florida Institute of Technology</a> 
+  This summer 2014 I was engaged as an undergraduate researcher with the
+  <a href="http://ua.edu">University of Alabama</a> 
   and the 
   <a href="http://www.nsf.gov">National Science Foundation</a> 
   conducting research into machine learning in theory and 
   application with the 
-  <a href="http://www.amalthea-reu.org">Amalthea REU</a>
+  <a href="http://reu.cs.ua.edu/">UA REU ESE</a>
   program.
 </p>
 
 <p>
-  Please view my <a href="{% url 'work' %}">work</a>,
-  <a href="{% url 'projects' %}">projects</a>,
-  <a href="{% url 'research' %}">research</a>, and
-  <a href="{% url 'community' %}">community</a> pages or my
-  <a href="/resume.pdf">résumé</a> for more information.
+  Please view my <a href="{{ url_for('views.work') }}">work</a>,
+  <a href="{{ url_for('views.projects') }}">projects</a>,
+  <a href="{{ url_for('views.research') }}">research</a>, and
+  <a href="{{ url_for('views.community') }}">community</a> pages or my
+  <a href="{{ url_for('static', filename='resume.pdf') }}">résumé</a> for more information.
 </p>
 
 {% endblock %}

@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 
 {% block pagetitle %}
 michel rouly &middot; {error}
@@ -9,7 +8,7 @@ michel rouly &middot; {error}
 
 <p>
   Woops, an error has occured. Please return 
-  <a href="{% url 'home' %}">home</a>.
+  <a href="{{ url_for('views.home') }}">home</a>.
 </p>
 
 {% endblock %}

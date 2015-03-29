@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 
 {% block pagetitle %}
 michel rouly &middot; {community involvement}
@@ -27,10 +26,10 @@ michel rouly &middot; {community involvement}
   other student organiations, and maintain organizational
   longevity. As an active SRCT member, I maintain leadership and
   development roles in several student
-  <a href="{% url 'projects' %}">projects</a>.
+  <a href="{{ url_for('views.projects') }}">projects</a>.
 </p>
 
-<h2>Community Programming Initiative &mdash; April 04, 2014</h2>
+<h2>Community Programming Initiative</h2>
 
 <p>
   The <a href="http://hackmason.org/cpi">Community Programming Initiative</a>

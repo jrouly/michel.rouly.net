@@ -9,8 +9,8 @@ michel rouly &middot; {research}
 <h2>Senior Design Research Project</h2>
 
 <p>
-  <strong>Project Title:</strong>&nbsp;Unsupervised Academic Curricula
-  Evaluation Through Latent Dirichlet Allocation
+  <strong>Project Title:</strong>&nbsp;What Are We Teaching? Automated
+  Evaluation of CS Curricula Content Using Topic Modeling
 </p>
 
 <p>
@@ -23,10 +23,32 @@ michel rouly &middot; {research}
   inspection.
 </p>
 
+<p>
+  In addition to extracting topics from course documents, I have
+  independently developed an easy-to-use web-based visualization platform
+  to display the results of information extraction and analysis. The
+  visualization tool is called <strong>Trajectory</strong> and is built on
+  the Python <a href="//flask.pocoo.org">Flask</a>framework.
+</p>
+
 
 <h3>Distributables</h3>
 
 <p class="subparagraph">
+  <strong>Paper:</strong>
+    <a href="{{ url_for('static', filename='projects/trajectory/docs/paper.pdf') }}">pdf (255K)</a>
+  <br />
+  <strong>Poster:</strong>
+    <a href="{{ url_for('static', filename='projects/trajectory/docs/poster.pdf') }}">pdf (1M)</a>
+  <br />
+  <strong>Slides:</strong>
+    <a href="{{ url_for('static', filename='projects/trajectory/docs/slides.pdf') }}">pdf (47K)</a>
+</p>
+
+<p class="subparagraph">
+  <strong>Web Demo:</strong>
+    <a href="//trajectory.rouly.net">Trajectory</a>
+  <br />
   <strong>Code Repository:</strong>
     <a href="//github.com/jrouly/trajectory">GitHub</a>
 </p>
@@ -42,11 +64,11 @@ michel rouly &middot; {research}
 
 <p>
   Summer 2014 I was engaged as an undergraduate researcher with the
-  <a href="http://ua.edu">University of Alabama</a> 
-  and the 
-  <a href="http://www.nsf.gov">National Science Foundation</a> 
-  conducting research into machine learning in theory and 
-  application with the 
+  <a href="http://ua.edu">University of Alabama</a>
+  and the
+  <a href="http://www.nsf.gov">National Science Foundation</a>
+  conducting research into machine learning in theory and
+  application with the
   <a href="http://reu.cs.ua.edu/">UA REU ESE</a>
   program.
 </p>
@@ -64,11 +86,11 @@ michel rouly &middot; {research}
 <h3>Distributables</h3>
 
 <p class="subparagraph">
-  <strong>Conference Paper:</strong> 
+  <strong>Conference Paper:</strong>
     <a href="//dx.doi.org/10.1145/2688204.2688207">ACM Digital Library</a>
   <br />
 
-  <strong>Conference Slides:</strong> 
+  <strong>Conference Slides:</strong>
     <a href="{{ url_for('static', filename='projects/ua-ese-reu/docs/presentation.pdf') }}">pdf (1.5M)</a>
 </p>
 
@@ -82,34 +104,34 @@ michel rouly &middot; {research}
 
 <p>
   Summer 2013 I was engaged as an undergraduate researcher with the
-  <a href="http://www.fit.edu">Florida Institute of Technology</a> 
-  and the 
-  <a href="http://www.nsf.gov">National Science Foundation</a> 
-  conducting research into machine learning in theory and 
-  application with the 
+  <a href="http://www.fit.edu">Florida Institute of Technology</a>
+  and the
+  <a href="http://www.nsf.gov">National Science Foundation</a>
+  conducting research into machine learning in theory and
+  application with the
   <a href="http://www.amalthea-reu.org">Amalthea REU</a>
   program.
 </p>
 
 <p>
-  The project involved architecting and implementing a Big Data scale 
-  data-mining framework with a 
+  The project involved architecting and implementing a Big Data scale
+  data-mining framework with a
   <a href="http://www.dillonmrose.com">research partner</a> and
-  a graduate mentor. The application was built on existing 
-  free and open source software frameworks, namely 
-  <a href="http://hadoop.apache.org">Apache Hadoop</a> 
-  for MapReduce and distributed filesystem implementations, 
-  <a href="http://mahout.apache.org">Apache Mahout</a> 
+  a graduate mentor. The application was built on existing
+  free and open source software frameworks, namely
+  <a href="http://hadoop.apache.org">Apache Hadoop</a>
+  for MapReduce and distributed filesystem implementations,
+  <a href="http://mahout.apache.org">Apache Mahout</a>
   libraries for mathematical support and algorithm benchmarking, and
   <a href="http://hive.apache.org">Apache Hive</a>
   for data warehousing and post-processing data manipulation.
 </p>
 
 <p>
-  Specifically, we parallelized the exemplar-based clustering algorithm 
-  <a href="http://uai.sis.pitt.edu/papers/11/p238-givoni.pdf">Hierarchical Affinity Propagation</a> 
-  using a MapReduce framework. Preliminary results of running the distributed 
-  algorithm on <a href="http://www.amazon.com">Amazon.com</a>'s 
+  Specifically, we parallelized the exemplar-based clustering algorithm
+  <a href="http://uai.sis.pitt.edu/papers/11/p238-givoni.pdf">Hierarchical Affinity Propagation</a>
+  using a MapReduce framework. Preliminary results of running the distributed
+  algorithm on <a href="http://www.amazon.com">Amazon.com</a>'s
   <a href="http://aws.amazon.com/elasticmapreduce">Elastic MapReduce (EMR)</a>
   service indicate superior performance as compared to competitive
   algorithms from the Apache Mahout libraries.
@@ -118,22 +140,22 @@ michel rouly &middot; {research}
 <h3>Distributables</h3>
 
 <p class="subparagraph">
-  <strong>Conference Paper:</strong> 
+  <strong>Conference Paper:</strong>
     <a href="{{ url_for('static', filename='projects/hap-with-map/docs/paper.pdf') }}">pdf (1M)</a>
   <br />
 
-  <strong>Conference Slides:</strong> 
+  <strong>Conference Slides:</strong>
     <a href="{{ url_for('static', filename='projects/hap-with-map/docs/slides.pptx') }}">pptx (27M)</a>
 </p>
 
 <p class="subparagraph">
-  <strong>Source Package:</strong> 
+  <strong>Source Package:</strong>
     <a href="{{ url_for('static', filename='projects/hap-with-map.tar.gz') }}">tar.gz (4.5M)</a>
   <br />
   <strong>Git Repository:</strong>
     <a href="https://github.com/jrouly/hap-with-map">GitHub</a>
   <br />
-  <strong>API:</strong> 
+  <strong>API:</strong>
     <a href="{{ url_for('static', filename='projects/hap-with-map/docs/javadoc/index.html') }}">JavaDoc</a>
 </p>
 
@@ -142,11 +164,11 @@ michel rouly &middot; {research}
     <a href="{{ url_for('static', filename='projects/hap-with-map/demo/index.html') }}">available</a>
   <br />
 
-  <strong>Project Video:</strong> 
+  <strong>Project Video:</strong>
     <a href="http://youtu.be/a-YP9O4gqIA">YouTube</a>
   <br />
 
-  <strong>Project Poster:</strong> 
+  <strong>Project Poster:</strong>
     <a href="{{ url_for('static', filename='projects/hap-with-map/docs/poster.pdf') }}">pdf (3M)</a>
   <br />
 

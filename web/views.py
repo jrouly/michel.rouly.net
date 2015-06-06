@@ -22,7 +22,3 @@ def research():
 def community():
     return render_template("community.html")
 
-@mod.route('/contact')
-def contact():
-    return render_template("contact.html")
-

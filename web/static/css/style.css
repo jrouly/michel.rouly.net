@@ -22,10 +22,12 @@ a:hover {
   color: #A94D3F;
 }
 
+/*
 a[href*="//"]:not([href*="localhost"]):after {
   content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
   margin: 0 0 0 5px;
 }
+*/
 
 p {
   text-align: justify;
@@ -37,13 +39,6 @@ p {
   margin: auto;
   padding: 15px;
   max-width: 800px;
-}
-
-#container hr {
-  color: #000000;
-  background-color: #000000;
-  border: 1px solid #000000;
-  clear: both;
 }
 
 #container h1 {
@@ -68,7 +63,8 @@ p {
 
 #banner {
   font-size: 0.7em;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
 }
 
 #banner #profile {

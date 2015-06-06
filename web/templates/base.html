@@ -6,6 +6,7 @@
       <meta name="description" content="Jean Michel Rouly's personal website.">
       <meta name="author" content="Jean Michel Rouly">
       <meta name="robots" content="all">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
@@ -13,35 +14,30 @@
       <title>Michel Rouly</title>
     </head>
     <body>
-      <div id="maincontent">
+      <div id="container">
 
-        <h1>{% block pagetitle %}{% endblock %}</h1>
-
-        <span id="nav">
-          <a href="{{ url_for('views.homepage') }}">home</a> - 
-          <a href="{{ url_for('views.work') }}">work</a> - 
-          <a href="{{ url_for('views.projects') }}">projects</a> -
-          <a href="{{ url_for('views.research') }}">research</a> - 
-          <a href="{{ url_for('views.community') }}">community</a> - 
-          <a href="{{ url_for('static', filename='rouly_resume.pdf') }}">résumé</a>
-        </span>
-
-        <span id="contact_me">
-          <a href="{{ url_for('views.contact') }}">contact</a>
-        </span>
+        <div id="banner">
+          <h1>
+            {% set profile_url = 'jrouly@gmu.edu' | gravatar %}
+            <a href="{{ profile_url }}"><img src="{{ profile_url }}" id="profile"></a>
+            <a href="{{ url_for('views.homepage') }}" id="name">michel rouly</a>
+            <span id="pagetitle">{% block pagetitle %}{% endblock %}</span>
+          </h1>
+        </div>
 
         <hr />
 
-        {% block content %}
+        {% include 'navigation.html' %}
 
-        {% endblock %}
+        <div id="maincontent">
+          {% block content %}
+
+          {% endblock %}
+        </div>
 
       </div>
-      <div id="timestamp">2015-05-25 <a href="http://www.apache.org/licenses/LICENSE-2.0">&copy; Jean Michel Rouly</a></div>
 
-      <!-- Piwik Image Tracker-->
       <img src="http://michel.rouly.net/analytics/piwik.php?idsite=1&rec=1" style="border:0" alt="" />
-      <!-- End Piwik -->
 
     </body>
 </html>

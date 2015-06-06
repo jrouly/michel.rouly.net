@@ -11,3 +11,12 @@ def internal_error(error):
 
 from web import views
 app.register_blueprint(views.mod)
+
+from flask_gravatar import Gravatar
+gravatar = Gravatar(app,
+    size=300,
+    rating='g',
+    default='retro',
+    force_default=False,
+    use_ssl=False,
+    base_url=None)

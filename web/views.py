@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, url_for, redirect
 
 mod = Blueprint('views', __name__)
 
@@ -22,3 +22,7 @@ def research():
 def community():
     return render_template("community.html")
 
+@mod.route('/resume')
+@mod.route('/resume.pdf')
+def resume():
+    return redirect(url_for('static', filename='rouly_resume.pdf'))

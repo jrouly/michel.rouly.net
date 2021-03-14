@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 from flask_minify import minify
+from flask_gravatar import Gravatar
+from web import views
 
 app = Flask(__name__)
 minify(app=app)
@@ -12,10 +14,8 @@ def not_found(error):
 def internal_error(error):
     return render_template('error.html'), 500
 
-from web import views
 app.register_blueprint(views.mod)
 
-from flask_gravatar import Gravatar
 gravatar = Gravatar(app,
     size=300,
     rating='g',

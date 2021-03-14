@@ -1,5 +1,8 @@
 from flask import Flask, render_template
+from flask_minify import minify
+
 app = Flask(__name__)
+minify(app=app)
 
 @app.errorhandler(404)
 def not_found(error):

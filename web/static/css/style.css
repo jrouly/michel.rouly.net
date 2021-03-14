@@ -22,13 +22,6 @@ a:hover {
   color: #A94D3F;
 }
 
-/*
-a[href*="//"]:not([href*="localhost"]):after {
-  content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
-  margin: 0 0 0 5px;
-}
-*/
-
 p {
   text-align: justify;
 }

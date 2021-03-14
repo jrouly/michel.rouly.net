@@ -1,37 +1,52 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
+
     <head>
+
+      <title>Michel Rouly</title>
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+      <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" />
+
       <meta charset="UTF-8">
-      <meta name="keywords" content="Jean Michel Rouly, computer science, research, software, George Mason University">
-      <meta name="description" content="Jean Michel Rouly's personal website.">
-      <meta name="author" content="Jean Michel Rouly">
       <meta name="robots" content="all">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-      <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" />
-      <title>Michel Rouly</title>
+      <meta name="keywords" content="Michel Rouly, Jean, Michel, Rouly, computer science, research, software, George Mason University">
+      <meta name="description" content="Michel Rouly's personal website.">
+      <meta name="author" content="Michel Rouly">
+
     </head>
+
     <body>
-
-      <!--
-			<script type="text/javascript" src="{{ url_for('static', filename='js/piwik.js') }}"></script>
-			<noscript><p><img src="//piwik.rouly.net/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-      -->
-
       <div id="container">
 
         <div id="banner">
           <h1>
-            {% set profile_url = 'jrouly@gmu.edu' | gravatar %}
-            <a href="{{ profile_url }}"><img src="{{ profile_url }}" id="profile"></a>
+            {% set gravatar_url = 'jrouly@gmu.edu' | gravatar %}
+            <a href="{{ gravatar_url }}"><img src="{{ gravatar_url }}" id="profile"></a>
             <a href="{{ url_for('views.homepage') }}" id="name">michel rouly</a>
             <span id="pagetitle">{% block pagetitle %}{% endblock %}</span>
           </h1>
         </div>
 
-        {% include 'navigation.html' %}
+        <ul id="nav">
+          <li><a href="{{ url_for('views.homepage') }}">home</a></li>
+
+          <li class="separator">portfolio</li>
+
+          <li><a href="{{ url_for('views.work') }}">work</a></li>
+          <li><a href="{{ url_for('views.projects') }}">projects</a></li>
+          <li><a href="{{ url_for('views.research') }}">research</a></li>
+          <li><a href="{{ url_for('views.community') }}">community</a></li>
+
+          <li class="separator">contact</li>
+
+          <li><a href="{{ url_for('static', filename='rouly_resume.pdf') }}">résumé</a></li>
+          <li><a class="external" href="//github.com/jrouly/">github</a></li>
+          <li><a class="external" href="//linkedin.com/in/michelrouly">linkedin</a></li>
+          <li><a href="{{ url_for('static', filename='88C35818.asc') }}">pgp</a></li>
+        </ul>
 
         <div id="maincontent">
           {% block content %}
@@ -40,6 +55,5 @@
         </div>
 
       </div>
-
     </body>
 </html>

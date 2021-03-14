@@ -24,7 +24,7 @@
       <div id="banner">
         <h1>
           {% set gravatar_url = 'jrouly@gmu.edu' | gravatar %}
-          <a href="{{ gravatar_url }}"><img src="{{ gravatar_url }}" id="profile"></a>
+          <a href="{{ gravatar_url }}"><img src="{{ gravatar_url }}" id="profile" alt="gravatar"></a>
           <a href="{{ url_for('views.homepage') }}" id="name">michel rouly</a>
           <span id="pagetitle">{% block pagetitle %}{% endblock %}</span>
         </h1>
@@ -38,7 +38,6 @@
         <li><a href="{{ url_for('views.work') }}">work</a></li>
         <li><a href="{{ url_for('views.projects') }}">projects</a></li>
         <li><a href="{{ url_for('views.research') }}">research</a></li>
-        <li><a href="{{ url_for('views.community') }}">community</a></li>
 
         <li class="separator">contact</li>
 

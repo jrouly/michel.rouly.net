@@ -18,9 +18,6 @@ def projects():
 def research():
     return render_template("research.html")
 
-@mod.route('/community')
-def community():
-    return render_template("community.html")
 
 @mod.route('/resume')
 @mod.route('/resume.pdf')

@@ -6,173 +6,132 @@ research
 
 {% block content %}
 
-<h2>Senior Design Research Project</h2>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
 
-<p>
-  <strong>Project Title:</strong>&nbsp;What Are We Teaching? Automated
-  Evaluation of CS Curricula Content Using Topic Modeling
-</p>
+  <h2>Masters Research Project</h2>
 
-<p>
-  This research was performed under the supervision of
-  <a href="//cs.gmu.edu/~hrangwal/">Huzefa Rangwala</a> at George Mason
-  University. We explored the application of Topic Modeling to textual
-  university curriculum data, specifically course descriptions. Automatically
-  extracting content from this corpus allows for larger-scale analysis of
-  university curricula than would be possible with manual inspection.
-</p>
+  <p>
+    <strong>Project Title:</strong>&nbsp;Measuring Career Preparedness with Topic Modeling
+  </p>
 
-<p>
-  In addition to extracting topics from course documents, I independently
-  developed an easy-to-use, web-based visualization platform
-  to display the results of information extraction and analysis. The
-  visualization tool is called <strong>Trajectory</strong> and is built on
-  the Python <a href="//flask.pocoo.org">Flask</a> framework.
-</p>
+  <p>
+    This self directed research was performed within the framework of the Georgia Tech
+    <a href="https://omscs.gatech.edu/cs-6460-educational-technology">Educational Technology</a>
+    research course. It explored the relationship between post-secondary education and the expectations of the
+    workforce. Specifically it applied Topic Modeling to university course descriptions and industry job listings.
+  </p>
 
+  <p>
+    The work utilized previous research performed at George Mason described below. The technologies used included
+    <a href="https://www.scala-lang.org/">Scala</a>, <a href="https://akka.io/">Akka</a>,
+    <a href="https://doc.akka.io/docs/alpakka/current/index.html">Alpakka</a>,
+    Apache <a href="https://opennlp.apache.org/">OpenNLP</a> and <a href="https://spark.apache.org/">Spark</a>,
+    <a href="https://www.elastic.co/">Elasticsearch</a>, <a href="https://github.com/playframework/playframework">Play</a>,
+    and <a href="https://www.postgresql.org/">Postgres</a>.
+  </p>
 
-<h3>Distributables</h3>
+  <ul>
+    <li><a href="{{ url_for('static', filename='dist/employability-paper.pdf') }}">Paper (pdf)</a></li>
+    <li><a href="https://github.com/jrouly/employability">Code (GitHub)</a></li>
+  </ul>
 
-<p class="subparagraph">
-  <strong>Paper:</strong>
-    <a href="{{ url_for('static', filename='projects/trajectory/docs/paper.pdf') }}">pdf (196K)</a>
-  <br />
-  <strong>Poster:</strong>
-    <a href="{{ url_for('static', filename='projects/trajectory/docs/poster.pdf') }}">pdf (1M)</a>
-  <br />
-  <strong>Slides:</strong>
-    <a href="{{ url_for('static', filename='projects/trajectory/docs/slides.pdf') }}">pdf (374K)</a>
-</p>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
 
-<p class="subparagraph">
-  <strong>Web Demo:</strong>
-    <a href="//trajectory.rouly.net">Trajectory</a>
-  <br />
-  <strong>Code Repository:</strong>
-    <a href="//github.com/jrouly/trajectory">GitHub</a>
-</p>
+  <h2>Senior Design Research Project</h2>
 
+  <p>
+    <strong>Project Title:</strong>&nbsp;What Are We Teaching? Automated Evaluation of CS Curricula Content Using
+    Topic Modeling
+  </p>
 
+  <p>
+    This research was performed under the supervision of <a href="https://cs.gmu.edu/~hrangwal/">Huzefa Rangwala</a>
+    at George Mason University. We explored the application of Topic Modeling to textual university curriculum data,
+    specifically course descriptions. Automatically extracting content from this corpus allows for larger-scale
+    analysis of university curricula than would be possible with manual inspection.
+  </p>
 
-<h2>UA REU Empirical Software Engineering</h2>
+  <p>
+    In addition to extracting topics from course documents, I independently developed an easy-to-use, web-based
+    visualization platform to display the results of information extraction and analysis. The visualization tool is
+    built with <a href="https://flask.pocoo.org">Flask</a>.
+  </p>
 
-<p>
-  <strong>Project Title:</strong>&nbsp;Usability and Suitability Survey of
-  Features in Visual IDEs for Non-Programmers
-</p>
+  <ul>
+    <li><a href="https://doi.org/10.1145/2787622.2787723">ACM Digital Library</a></li>
+    <li><a href="{{ url_for('static', filename='dist/trajectory-paper.pdf') }}">Paper (pdf)</a></li>
+    <li><a href="{{ url_for('static', filename='dist/trajectory-poster.pdf') }}">Poster (pdf)</a></li>
+    <li><a href="{{ url_for('static', filename='dist/trajectory-slides.pdf') }}">Slides (pdf)</a></li>
+    <li><a href="https://github.com/jrouly/trajectory">Code (GitHub)</a></li>
+  </ul>
 
-<p>
-  Summer 2014 I was engaged as an undergraduate researcher with the
-  <a href="http://ua.edu">University of Alabama</a>
-  and the
-  <a href="http://www.nsf.gov">National Science Foundation</a>
-  conducting research into machine learning in theory and
-  application with the
-  <a href="http://reu.cs.ua.edu/">UA REU ESE</a>
-  program.
-</p>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
 
-<p>
-  The project involved the systematic empirical study of user interfaces in
-  visual language integrated development environments (IDEs). Along with
-  <a href="http://www-ens.iro.umontreal.ca/~syriani">Dr. Eugene Syriani</a>
-  we analyzed a set of visual language IDEs and developed formal metrics
-  for comparison. The goal of this research was to understand the
-  important positive and negative features of visual language IDEs in a
-  formal setting.
-</p>
+  <h2>UA REU Empirical Software Engineering</h2>
 
-<h3>Distributables</h3>
+  <p>
+    <strong>Project Title:</strong>&nbsp;Usability and Suitability Survey of Features in Visual IDEs for Non-Programmers
+  </p>
 
-<p class="subparagraph">
-  <strong>Conference Paper:</strong>
-    <a href="//dx.doi.org/10.1145/2688204.2688207">ACM Digital Library</a>
-  <br />
+  <p>
+    Summer 2014 I was engaged as an undergraduate researcher with the <a href="http://ua.edu">University of Alabama</a>
+    and the <a href="http://www.nsf.gov">National Science Foundation</a> conducting research into software engineering
+    theory and application with the <a href="http://reu.cs.ua.edu/">UA REU ESE</a> program.
+  </p>
 
-  <strong>Conference Slides:</strong>
-    <a href="{{ url_for('static', filename='projects/ua-ese-reu/docs/presentation.pdf') }}">pdf (1.5M)</a>
-</p>
+  <p>
+    The project involved the systematic empirical study of user interfaces in visual language integrated development
+    environments (IDEs). Along with <a href="http://www-ens.iro.umontreal.ca/~syriani">Dr. Eugene Syriani</a> we
+    analyzed a set of visual language IDEs and developed formal metrics for comparison. The goal of this research was
+    to understand the important positive and negative features of visual language IDEs in a formal setting.
+  </p>
 
+  <ul>
+    <li><a href="https://doi.org/10.1145/2688204.2688207">ACM Digital Library</a></li>
+    <li><a href="{{ url_for('static', filename='dist/ua-ese-reu-paper.pdf') }}">Paper (pdf)</a></li>
+    <li><a href="{{ url_for('static', filename='dist/ua-ese-reu-slides.pdf') }}">Slides (pdf)</a></li>
+  </ul>
 
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
 
-<h2>Amalthea REU</h2>
+  <h2>Amalthea REU</h2>
 
-<p>
-  <strong>Project Title:</strong>&nbsp;Large-scale Clustering for Big Data Analytics: A MapReduce Implementation of Hierarchical Affinity Propagation
-</p>
+  <p>
+    <strong>Project Title:</strong>&nbsp;Large-scale Clustering for Big Data Analytics: A MapReduce Implementation
+    of Hierarchical Affinity Propagation
+  </p>
 
-<p>
-  Summer 2013 I was engaged as an undergraduate researcher with the
-  <a href="http://www.fit.edu">Florida Institute of Technology</a>
-  and the
-  <a href="http://www.nsf.gov">National Science Foundation</a>
-  conducting research into machine learning in theory and
-  application with the
-  <a href="http://www.amalthea-reu.org">Amalthea REU</a>
-  program.
-</p>
+  <p>
+    Summer 2013 I was engaged as an undergraduate researcher with the
+    <a href="http://www.fit.edu">Florida Institute of Technology</a> and the
+    <a href="http://www.nsf.gov">National Science Foundation</a>
+    conducting research into machine learning in theory and application with the
+    <a href="http://www.amalthea-reu.org">Amalthea REU</a> program.
+  </p>
 
-<p>
-  The project involved architecting and implementing a Big Data scale
-  data-mining framework with a
-  <a href="http://www.dillonmrose.com">research partner</a> and
-  a graduate mentor. The application was built on existing
-  free and open source software frameworks, namely
-  <a href="http://hadoop.apache.org">Apache Hadoop</a>
-  for MapReduce and distributed filesystem implementations,
-  <a href="http://mahout.apache.org">Apache Mahout</a>
-  libraries for mathematical support and algorithm benchmarking, and
-  <a href="http://hive.apache.org">Apache Hive</a>
-  for data warehousing and post-processing data manipulation.
-</p>
+  <p>
+    The project involved architecting and implementing a Big Data scale data-mining framework. The application was
+    built on existing free and open source software frameworks including
+    <a href="http://hadoop.apache.org">Apache Hadoop</a> for MapReduce and distributed filesystem implementations,
+    <a href="http://mahout.apache.org">Apache Mahout</a> libraries for mathematical support and algorithm benchmarking,
+    and <a href="http://hive.apache.org">Apache Hive</a> for data warehousing and post-processing data manipulation.
+  </p>
 
-<p>
-  Specifically, we parallelized the exemplar-based clustering algorithm
-  <a href="http://uai.sis.pitt.edu/papers/11/p238-givoni.pdf">Hierarchical Affinity Propagation</a>
-  using a MapReduce framework. Preliminary results of running the distributed
-  algorithm on <a href="http://www.amazon.com">Amazon.com</a>'s
-  <a href="http://aws.amazon.com/elasticmapreduce">Elastic MapReduce (EMR)</a>
-  service indicate superior performance as compared to competitive
-  algorithms from the Apache Mahout libraries.
-</p>
+  <p>
+    Specifically, we parallelized the exemplar-based clustering algorithm
+    <a href="http://uai.sis.pitt.edu/papers/11/p238-givoni.pdf">Hierarchical Affinity Propagation</a>
+    using a MapReduce framework. Preliminary results of running the distributed algorithm on
+    <a href="http://aws.amazon.com/elasticmapreduce">AWS Elastic MapReduce (EMR)</a>
+    service indicate superior performance as compared to competitive algorithms from the Apache Mahout libraries.
+  </p>
 
-<h3>Distributables</h3>
-
-<p class="subparagraph">
-  <strong>Conference Paper:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map/docs/paper.pdf') }}">pdf (1M)</a>
-  <br />
-
-  <strong>Conference Slides:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map/docs/slides.pptx') }}">pptx (27M)</a>
-</p>
-
-<p class="subparagraph">
-  <strong>Source Package:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map.tar.gz') }}">tar.gz (4.5M)</a>
-  <br />
-  <strong>Git Repository:</strong>
-    <a href="https://github.com/jrouly/hap-with-map">GitHub</a>
-  <br />
-  <strong>API:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map/docs/javadoc/index.html') }}">JavaDoc</a>
-</p>
-
-<p class="subparagraph">
-  <strong>Demo:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map/demo/index.html') }}">available</a>
-  <br />
-
-  <strong>Project Video:</strong>
-    <a href="http://youtu.be/a-YP9O4gqIA">YouTube</a>
-  <br />
-
-  <strong>Project Poster:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map/docs/poster.pdf') }}">pdf (3M)</a>
-  <br />
-
-  <strong>Technical Report:</strong>
-    <a href="{{ url_for('static', filename='projects/hap-with-map/docs/technical-report.pdf') }}">pdf (2M)</a>
-</p>
+  <ul>
+    <li><a href="https://doi.org/10.1109/IC2E.2014.42">IEEE Xplore</a></li>
+    <li><a href="{{ url_for('static', filename='dist/amalthea-paper.pdf') }}">Paper (pdf)</a></li>
+    <li><a href="{{ url_for('static', filename='dist/amalthea-slides.pptx') }}">Slides (pptx)</a></li>
+    <li><a href="{{ url_for('static', filename='dist/amalthea-poster.pdf') }}">Poster (pdf)</a></li>
+    <li><a href="{{ url_for('static', filename='dist/amalthea-tech-report.pdf') }}">Tech Report (pdf)</a></li>
+    <li><a href="https://github.com/jrouly/hap-with-map">Code (GitHub)</a></li>
+  </ul>
 
 {% endblock %}

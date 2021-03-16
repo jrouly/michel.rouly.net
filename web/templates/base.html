@@ -25,7 +25,7 @@
         <h1>
           {% set gravatar_url = 'jrouly@gmu.edu' | gravatar %}
           <a href="{{ gravatar_url }}"><img src="{{ gravatar_url }}" id="profile" alt="gravatar"></a>
-          <a href="{{ url_for('views.homepage') }}" id="name">michel rouly</a>
+          <a href="{{ url_for('views.homepage') }}" id="name">michel rouly</a> /
           <span id="pagetitle">{% block pagetitle %}{% endblock %}</span>
         </h1>
       </div>
@@ -44,7 +44,7 @@
         <li><a href="{{ url_for('static', filename='rouly_resume.pdf') }}">résumé</a></li>
         <li><a class="external" href="https://github.com/jrouly/">github</a></li>
         <li><a class="external" href="https://linkedin.com/in/michelrouly">linkedin</a></li>
-        <li><a href="{{ url_for('static', filename='88C35818.asc') }}">pgp</a></li>
+        <li><a href="{{ url_for('static', filename='pgp.asc') }}">pgp</a></li>
       </ul>
 
       <div id="maincontent">

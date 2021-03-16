@@ -18,6 +18,9 @@ def projects():
 def research():
     return render_template("research.html")
 
+@mod.route('/bikes')
+def bikes():
+    return render_template("bikes.html")
 
 @mod.route('/resume')
 @mod.route('/resume.pdf')

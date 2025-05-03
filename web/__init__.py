@@ -1,10 +1,11 @@
 from flask import Flask, render_template
-from flask_minify import minify
-from flask_gravatar import Gravatar
+from flask_minify import Minify
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 from web import views
 
 app = Flask(__name__)
-minify(app=app)
+Minify(app=app)
 
 @app.errorhandler(404)
 def not_found(error):
@@ -16,10 +17,4 @@ def internal_error(error):
 
 app.register_blueprint(views.mod)
 
-gravatar = Gravatar(app,
-    size=300,
-    rating='g',
-    default='retro',
-    force_default=False,
-    use_ssl=True,
-    base_url=None)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)

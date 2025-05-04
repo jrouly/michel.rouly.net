@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 gunicorn \
-  -b :${APP_PORT:-5000} \
+  -b :5000 \
   --access-logfile - \
   --error-logfile - \
   web:app

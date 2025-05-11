@@ -1,3 +1,4 @@
 Flask<4
+Flask-Caching
 Flask-Minify
 gunicorn

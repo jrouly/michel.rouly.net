@@ -12,9 +12,9 @@ config = {
 
 # Initialize application.
 app = Flask(__name__)
-app.config.from_mapping(config)
 
 # Configure application.
+app.config.from_mapping(config)
 Minify(app=app)
 cache.init_app(app)
 app.register_blueprint(views.mod)
